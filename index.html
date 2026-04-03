@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francisca - E-commerce de Vanguardia</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <a href="#inicio" class="brand-container">
+                <img src="logo.jpg" alt="Logo" class="logo-img" onerror="this.style.display='none'">
+                <span class="brand-name">Francisca</span>
+            </a>
+        </div>
+        <div class="menu-icon" id="menuIcon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="cart-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="inicio">
+        <div class="hero-content fade-in-up">
+            <h1>Sentite libre, vistiéndote con vos misma</h1>
+            <p>Ropa desestructurada en lino, algodón y broderie. Diseñada en Argentina para abrazar todos los talles con frescura y confort.</p>
+            <a href="#catalogo" class="btn-primary">Ver Nueva Colección</a>
+        </div>
+    </header>
+
+    <!-- Sobre Nosotros -->
+    <section class="about section-padding" id="nosotros">
+        <div class="container fade-in-up">
+            <p class="about-text">
+                "Francisca nació del deseo de soltar las estructuras. Seleccionamos materiales nobles que respiran con tu piel, creando piezas Boho y Románticas que celebran la belleza real. No vendemos talles, vestimos historias."
+            </p>
+        </div>
+    </section>
+
+    <!-- Grilla de Productos -->
+    <section class="products section-padding" id="catalogo">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Nueva Colección</h2>
+            <div class="product-grid">
+                <!-- Producto 1: Conjunto -->
+                <article class="product-card fade-in-up">
+                    <div class="product-image">
+                        <img src="conjunto1.jpg" alt="Conjunto Relajado" onerror="this.src=''; this.alt='(Falta conjunto1.jpg)'; this.style.backgroundColor='#f0f0f0'; this.style.padding='2rem'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Conjunto Lino Arena</h3>
+                        <p class="price">$52.000</p>
+                        <p class="sizes">S al 3XL</p>
+                    </div>
+                </article>
+                <!-- Producto 2: Conjunto -->
+                <article class="product-card fade-in-up" style="transition-delay: 0.1s">
+                    <div class="product-image">
+                        <img src="conjunto2.jpg" alt="Conjunto Boho" onerror="this.src=''; this.alt='(Falta conjunto2.jpg)'; this.style.backgroundColor='#f0f0f0'; this.style.padding='2rem'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Conjunto Boho Algodón</h3>
+                        <p class="price">$61.500</p>
+                        <p class="sizes">Mujer al 4XL</p>
+                    </div>
+                </article>
+                <!-- Producto 3: Camisa -->
+                <article class="product-card fade-in-up" style="transition-delay: 0.2s">
+                    <div class="product-image">
+                        <img src="camisa1.jpg" alt="Camisa Ligera" onerror="this.src=''; this.alt='(Falta camisa1.jpg)'; this.style.backgroundColor='#f0f0f0'; this.style.padding='2rem'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Camisa Ligera Estival</h3>
+                        <p class="price">$35.000</p>
+                        <p class="sizes">Talle Único</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detalles Técnicos (Acordeón) -->
+    <section class="details section-padding fade-in-up">
+        <div class="container">
+            <div class="accordion" id="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Cuidado de la prenda 
+                        <span class="icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        </span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Lavar con agua fría, no retorcer. Secar a la sombra para mantener la integridad de las fibras naturales.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Guía de Talles 
+                        <span class="icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        </span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Nuestras prendas están pensadas para adaptarse a tu cuerpo. Ofrecemos opciones amplias y relajadas para que te sientas cómoda siempre. Consultá la tabla de medidas específicas en cada producto.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Formas de pago 
+                        <span class="icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        </span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Aceptamos todas las tarjetas de crédito y débito. También podés abonar mediante transferencia bancaria.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Cambios y devoluciones 
+                        <span class="icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                        </span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Tenés hasta 30 días para realizar cambios si no te convence el calce. Las prendas deben estar sin uso y con sus etiquetas. Comunicate a nuestro WhatsApp para coordinar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials section-padding fade-in-up">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen de nosotros</h2>
+            <div class="testimonial-grid">
+                <blockquote class="testimonial-card">
+                    <p>"El lino es de una calidad hermosa. Me encanta que ofrezcan talles reales, por fin encuentro ropa que me hace sentir cómoda y linda al mismo tiempo."</p>
+                    <cite>- Mariana, Rosario</cite>
+                </blockquote>
+                <blockquote class="testimonial-card">
+                    <p>"Excelente atención y el calce es perfecto. La blusa nube de algodón es un viaje de ida, ¡la recomiendo totalmente!"</p>
+                    <cite>- Florencia, Pueblo Esther</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación y Horarios -->
+    <section class="location section-padding fade-in-up">
+        <div class="container location-container">
+            <div class="location-info">
+                <h2>Visitanos</h2>
+                <p>Nuestra tienda en Pueblo Esther te espera. Vení a conocer los modelos, tocar los géneros y probarte con tranquilidad.</p>
+                <div class="contact-details">
+                    <p><strong>Ubicación:</strong> San Lorenzo 1880, Pueblo Esther, Santa Fe</p>
+                    <p><strong>Horarios:</strong> Lunes a Sábados de 09:30 a 13:00 y 16:30 a 20:00 hs</p>
+                </div>
+            </div>
+            <div class="location-map">
+                <div class="map-placeholder">
+                    <!-- Embed de mapa simulado -->
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 10px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    <span>Mapa de Pueblo Esther</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h2>Francisca</h2>
+                <p>Moda femenina desestructurada.</p>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Suscribite a nuestro Newsletter</h3>
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn-secondary">Suscribirme</button>
+                </form>
+            </div>
+            <div class="footer-links">
+                <h3>Seguinos</h3>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Francisca. Todos los derechos reservados. <a href="#">Aviso Legal</a> | <a href="#">Política de Privacidad</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
